@@ -5,3 +5,16 @@
 // 645 -> 5
 // 78 -> третьей цифры нет
 // 32679 -> 6
+
+Console.Write("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+if (number > 99)
+{
+  Console.WriteLine((number % 10));
+}
+else
+{
+  number = number / 10;
+  Console.WriteLine("Третьей цифры нет ");
+}
